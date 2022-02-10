@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+}
+
+.header {
+    width: 100%;
+    height: 20rem;
+    background-color: rgba(152,100,250,0.8);
+    box-shadow: 0 0.5rem 3.5rem 0.16rem rgba(0, 0, 0, 0.40);
+}
+
+.myself{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+   
+}
+
+.myself img {
+    width: 30rem;
+    margin-top: 2rem;
+}
+
+.myself h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 5.5rem;
+    font-weight: 500;
+    line-height: 8rem;
+}
+
+.about_me{
+    width: 90%;
+    margin: 4rem auto;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    background-color: rgb(228, 226, 226);
+    text-align: center;
+    box-shadow: 0 -0.2rem 1.5rem 0.05rem rgba(0, 0, 0, 0.60);
+
+}
+.footer {
+    width: 100%;
+    height: 5rem;
+    padding-top: 2rem;
+    background-color: rgba(152,100,250,0.8);
+    text-align: center;
+    box-shadow: 0 -0.5rem 3.5rem 0.16rem rgba(0, 0, 0, 0.40);
+}
+
+@media screen and (min-width:768px) {
+    .myself{
+        flex-direction: row;
+       
+    }
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+    }
+
+}
