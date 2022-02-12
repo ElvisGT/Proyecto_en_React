@@ -24,6 +24,10 @@ body {
     box-shadow: 0 0.5rem 3.5rem 0.16rem rgba(0, 0, 0, 0.40);
 }
 
+.header img {
+    width: 20rem;
+}
+
 .myself{
     display: flex;
     flex-direction: column;
@@ -48,6 +52,7 @@ body {
 
 .about_me{
     width: 90%;
+    height: 5rem;
     margin: 4rem auto;
     font-size: 1.8rem;
     line-height: 2.2rem;
@@ -66,6 +71,14 @@ body {
 }
 
 @media screen and (min-width:768px) {
+    .header {
+        height: 15rem;
+    }
+
+    .header img {
+        width: 15rem;
+    }
+    
     .myself{
         flex-direction: row;
        
@@ -74,6 +87,10 @@ body {
     .footer {
         position: fixed;
         bottom: 0;
+        
+
     }
+
+
 
 }

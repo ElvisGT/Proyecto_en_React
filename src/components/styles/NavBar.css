@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.navBar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 12rem;
+    background-color: rgba(152,100,250,0.8);
+}
+
+.navBar a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.navBar img{
+    width: 10rem;
+}
+
+.home {
+    font-size: 2.2rem;
+    font-weight: 300;
+
+}

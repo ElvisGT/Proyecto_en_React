@@ -6,8 +6,12 @@
 // container.appendChild(element);
 
 import Badge from './components/Badge';
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import LogoRick from './img/1.svg';
+import ImgContainer from './img/2.svg';
+import BadgeNew from './pages/BadgeNew';
+
 
 
 
@@ -35,4 +39,14 @@ const element = React.createElement(
 
 const container = document.getElementById('app');
 
-ReactDOM.render(<Badge/>,container);
+// ReactDOM.render(<Badge 
+// firstName="Elvis"
+//  lastName="Gil" 
+//  job="FrontEnd Engineer" 
+//  red="@ELvis" 
+//  avatarLogo={LogoRick}
+//  avatarContainer={ImgContainer}
+//  />,
+// container);
+
+ReactDOM.render(<BadgeNew/>,container);

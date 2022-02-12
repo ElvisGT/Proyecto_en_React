@@ -1,6 +1,4 @@
 import React from 'react';
-import LogoConf from '../img/2.svg'
-import ImgContainer from '../img/1.svg'
 import './styles/Badge.css'
 
 class Badge extends React.Component {
@@ -8,17 +6,17 @@ class Badge extends React.Component {
         return (
             <div className="container">
                 <div className="header">
-                <img src={LogoConf} alt="Logo"/>
+                <img src={this.props.avatarLogo} alt="Logo"/>
                 </div>
 
                 <div className="myself">
-                    <img src={ImgContainer} alt="Avatar"></img>
-                    <h1>Elvis <br /> Gil</h1>
+                    <img src={this.props.avatarContainer} alt="Avatar"></img>
+                    <h1>{this.props.firstName} <br /> {this.props.lastName}</h1>
                 </div>
 
                 <div className="about_me">
-                    <p>Desarrollador Frontend Engineer</p>
-                    <p>@ElvisGilTorres</p>
+                    <p>{this.props.job}</p>
+                    <p>{this.props.red}</p>
                 </div>
 
                 <div className="footer">
