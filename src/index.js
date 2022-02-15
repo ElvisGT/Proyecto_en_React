@@ -8,9 +8,8 @@
 import Badge from './components/Badge';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import LogoRick from './img/1.svg';
-import ImgContainer from './img/2.svg';
 import BadgeNew from './pages/BadgeNew';
+import NavBar from './components/NavBar';
 
 
 

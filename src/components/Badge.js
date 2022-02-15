@@ -12,12 +12,13 @@ class Badge extends React.Component {
                 <div className="myself">
                     <img src={this.props.avatarContainer} alt="Avatar"></img>
                     <h1>{this.props.firstName} <br /> {this.props.lastName}</h1>
+                    <div className="about_me">
+                        <p>{this.props.job}</p>
+                        <p>{this.props.red}</p>
+                </div>
                 </div>
 
-                <div className="about_me">
-                    <p>{this.props.job}</p>
-                    <p>{this.props.red}</p>
-                </div>
+                
 
                 <div className="footer">
                     #ElvisGT
