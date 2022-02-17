@@ -9,8 +9,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import BadgeForm from './components/BadgeForm';
-import BadgeNew from './pages/BadgeNew';
-import Badges from './pages/Badges';
 import App from './components/App'
 
 
@@ -51,4 +49,4 @@ const container = document.getElementById('app');
 //  />,
 // container);
 
-ReactDOM.render(<Badges/>,container);
+ReactDOM.render(<App/>,container);

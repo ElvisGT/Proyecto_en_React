@@ -14,20 +14,9 @@ body {
 }
 
 .container {
-    width: 30rem;
-    margin: .8rem auto 0;
+    width: 90%;
+    margin: .8rem 6rem;
     
 }
 
-.container > .buttons {
-    display: flex;
-    justify-content:flex-end;
-}
-
-.buttons a {
-    width: 4rem;
-    text-align: center;
-    text-decoration: none;
-    background-color: rgba(152,100,250,0.8);
-}
 

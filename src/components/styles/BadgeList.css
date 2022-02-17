@@ -20,3 +20,15 @@
    
 
 }
+
+.buttons {
+    display: flex;
+    justify-content:flex-end;
+}
+
+.buttons a {
+    width: 4rem;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(152,100,250,0.8);
+}

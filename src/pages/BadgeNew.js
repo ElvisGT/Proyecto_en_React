@@ -2,7 +2,6 @@ import React from 'react';
 import LogoAvatar from '../img/1.svg';
 import ContainerAvatar from '../img/2.svg';
 import '../pages/styles/BadgeNew.css';
-import NavBar from '../components/NavBar';
 import Badge from '../components/Badge';
 import BadgeForm from '../components/BadgeForm';
 
@@ -28,9 +27,7 @@ class BadgeNew extends React.Component{
     }
     render(){
         return(
-            <div>
-                <NavBar/>
-            
+            <React.Fragment>
                 <div className="container">
                         <div className="row">
                             <div className="col-6">
@@ -48,7 +45,7 @@ class BadgeNew extends React.Component{
                             </div>
                         </div>
                     </div>
-            </div>
+            </React.Fragment>
         );
     }
 }

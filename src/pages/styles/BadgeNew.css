@@ -16,17 +16,16 @@ body {
 
 
 .container {
-    width: 95%;
-    margin: 2rem auto 0;
+    width: 100%;
 }
 
 .row { 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    
 }
 
 .col-6 {
-    width: 90%;
+    width: 30rem;
 }
 

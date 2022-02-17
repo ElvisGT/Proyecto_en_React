@@ -1,5 +1,4 @@
 import React from 'react';
-import NavBar from '../components/NavBar';
 import '../pages/styles/Badges.css';
 import BadgesList from '../components/BadgesList';
 
@@ -30,17 +29,13 @@ class Badges extends React.Component{
     };
     render(){
         return(
-            <div>
-                <NavBar/>
+            <React.Fragment>
                 <div className="container">
-                    <div className="buttons">
-                        <a href="../badges/new">Add</a>
-                    </div>
-
+                    
                     <BadgesList badges={this.state.data}/>
                 
                 </div>
-            </div>
+            </React.Fragment>
         );
     }
 }
