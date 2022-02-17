@@ -4,6 +4,7 @@ import BadgeNew from '../pages/BadgeNew';
 import Badges from '../pages/Badges';
 import Layout from '../components/Layout';
 import NotFound from '../pages/NotFound.js';
+import Home from '../pages/Home';
 
 
 function App(){
@@ -13,9 +14,11 @@ function App(){
                     <Routes>
                         <Route exact path='/badges' element={<Badges/>}/>
                         <Route exact path='/badges/new' element={<BadgeNew/>}/>
-                        <Route exact path='/' element={<NotFound/>}/>
+                        <Route element={<NotFound/>}/>
+                        <Route exact path='/' element={<Home/>}/>   
                     </Routes>
-            </Layout>          
+            </Layout>  
+                 
         </BrowserRouter>
 
     );
