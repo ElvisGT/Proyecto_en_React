@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+html {
+    font-size: 62.5%;
+    background-color:white;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.container {
+    width: 30rem;
+    margin: .8rem auto 0;
+    
+}
+
+.container > .buttons {
+    display: flex;
+    justify-content:flex-end;
+}
+
+.buttons a {
+    width: 4rem;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(152,100,250,0.8);
+}
+

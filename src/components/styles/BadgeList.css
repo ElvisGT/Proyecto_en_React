@@ -1,0 +1,22 @@
+.list {
+    width: 20rem;
+    margin: .8rem auto 0;
+    text-align: center;
+}
+
+.list > ul {
+    width: 100%;
+    margin: 0 auto;
+    list-style: none;
+    
+}
+
+.list > ul > li  {
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+    background-color: #F9E65C;
+   
+
+}
