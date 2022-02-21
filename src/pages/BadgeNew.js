@@ -4,6 +4,7 @@ import ContainerAvatar from '../img/2.svg';
 import '../pages/styles/BadgeNew.css';
 import Badge from '../components/Badge';
 import BadgeForm from '../components/BadgeForm';
+import api from '../api';
 
 class BadgeNew extends React.Component{
     state = {form:{
@@ -11,6 +12,7 @@ class BadgeNew extends React.Component{
         LastName:'',
         Email:'',
     }};
+
     handleChange = e =>{
         // const nextForm = this.state.form;
         // nextForm[e.target.name] = e.target.value;
@@ -25,6 +27,20 @@ class BadgeNew extends React.Component{
         });
        
     }
+
+    handleSubmit = async e => {
+        e.preventDefault();
+
+        this.setState({loading:true,error:null});
+
+        try{
+            await api.badges.create(this.state.form);
+            this.setState({loading:false});
+        }catch(error){
+            this.setState({loading:false,error:error});
+        }
+    }
+
     render(){
         return(
             <React.Fragment>
@@ -41,7 +57,7 @@ class BadgeNew extends React.Component{
                                 />
                             </div>
                             <div className="col-6">
-                                <BadgeForm onChange={this.handleChange} valueForm={this.state.form}/>
+                                <BadgeForm onChange={this.handleChange} onSubmit={this.handleSubmit} valueForm={this.state.form}/>
                             </div>
                         </div>
                     </div>
